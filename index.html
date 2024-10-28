@@ -12,6 +12,7 @@
         <h1>37th Early Bird Open Mens 5000 Meters HS Open 5K</h1>
         <p>Thu Aug 29 2024</p>
         <button id="darkModeToggle">Toggle Dark Mode</button>
+        <button id="disableAnimationsButton">Disable Animations</button>
     </header>
 
     <div class="container">
@@ -170,7 +171,19 @@
     });
 </script>
 
+<script>
+    const disableAnimationsButton = document.getElementById('disableAnimationsButton');
     
+    disableAnimationsButton.addEventListener('click', () => {
+        document.body.classList.toggle('disable-animations');
+        // Toggle button text to indicate the current state
+        if (document.body.classList.contains('disable-animations')) {
+            disableAnimationsButton.textContent = 'Enable Animations';
+        } else {
+            disableAnimationsButton.textContent = 'Disable Animations';
+        }
+    });
+</script>    
 
 </body>
 
