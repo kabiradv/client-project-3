@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>37th Early Bird Open Mens 5000 Meters HS Open 5K</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>37th Early Bird Open Mens 5000 Meters HS Open 5K</h1>
         <p>Thu Aug 29 2024</p>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
     </header>
 
     <div class="container">
@@ -23,7 +25,7 @@
                 <img src="IMG_8973.jpg" alt="Male Athletes running the race">
                 <img src="IMG_20240829_171731303.jpg" alt="Male athlete finishing the race">
                 <img src="IMG_9039.jpg" alt="Female Athletes running the race">
-                <img src="IMG_9023.jpg" alt="Male athletes running the race">\
+                <img src="IMG_9023.jpg" alt="Male athletes running the race">
                 <img src="IMG_9050.jpg" alt="Female athletes finishing the race">
             </div>
         </div>
@@ -138,6 +140,38 @@
             </table>
         </div>
     </div>
+    <script>
+        const toggleButton = document.getElementById('darkModeToggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+
+<script>
+    // Get elements
+    const modal = document.createElement('div');
+    modal.classList.add('modal');
+    document.body.appendChild(modal);
+
+    // When an image in the gallery is clicked
+    document.querySelectorAll('.gallery img').forEach(img => {
+        img.addEventListener('click', () => {
+            const enlargedImg = document.createElement('img');
+            enlargedImg.src = img.src;
+            modal.innerHTML = ''; // Clear previous image
+            modal.appendChild(enlargedImg);
+            modal.style.display = 'flex'; // Show modal
+        });
+    });
+
+    // Hide the modal when clicked
+    modal.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+</script>
+
+    
+
 </body>
 
 </html>
