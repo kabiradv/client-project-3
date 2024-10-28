@@ -72,7 +72,7 @@ h2 {
 }
 
 .gallery img {
-    width: 25%;
+    width: 35%;
     height: auto;
     border-radius: 5px;
     object-fit: cover;
@@ -101,7 +101,7 @@ h2 {
 
 /* Enlarged image styling */
 .modal img {
-    width: 30%;
+    width: 50%;
     height: auto;
     border-radius: 10px;
 }
