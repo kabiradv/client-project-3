@@ -72,7 +72,7 @@ h2 {
 }
 
 .gallery img {
-    width: 35%;
+    width: 25%;
     height: auto;
     border-radius: 5px;
     object-fit: cover;
@@ -101,7 +101,7 @@ h2 {
 
 /* Enlarged image styling */
 .modal img {
-    width: 50%;
+    width: 30%;
     height: auto;
     border-radius: 10px;
 }
@@ -202,4 +202,37 @@ button:focus, select:focus {
         transition: none;
         animation: none;
     }
+}
+
+/* Class to disable all animations */
+.disable-animations * {
+    transition: none !important;
+    animation: none !important;
+}
+
+/* Styling for disable animations button */
+#disableAnimationsButton {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#disableAnimationsButton:hover {
+    background-color: #005bb5;
+}
+
+#disableAnimationsButton:active {
+    background-color: #003f8a;
+}
+
+#disableAnimationsButton:focus {
+    outline: 2px solid #005bb5;
+    outline-offset: 2px;
 }
