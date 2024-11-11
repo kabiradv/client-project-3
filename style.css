@@ -313,7 +313,9 @@ button:focus, select:focus {
     }
 
     .gallery {
-        grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
     }
 
     .event-button {
@@ -332,7 +334,9 @@ button:focus, select:focus {
     }
 
     .gallery {
-        grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
     }
 }
 
