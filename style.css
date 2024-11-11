@@ -236,3 +236,51 @@ button:focus, select:focus {
     outline: 2px solid #005bb5;
     outline-offset: 2px;
 }
+
+/* Styling for the event buttons in light mode */
+.event-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #7438ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.event-button:hover {
+    background-color: #005bb5;
+}
+
+.event-button:active {
+    background-color: #003f8a;
+}
+
+.event-button:focus {
+    outline: 2px solid #005bb5;
+    outline-offset: 2px;
+}
+
+/* Dark mode styles for the event buttons */
+.dark-mode .event-button {
+    background-color: #1f1f1f;
+    color: #f4f4f9;
+}
+
+.dark-mode .event-button:hover {
+    background-color: #333;
+}
+
+.dark-mode .event-button:active {
+    background-color: #555;
+}
+
+.dark-mode .event-button:focus {
+    outline: 2px solid #80c0ff;
+    outline-offset: 2px;
+}
