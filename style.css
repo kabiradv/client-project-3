@@ -340,6 +340,6 @@ button:focus, select:focus {
 .navbar {
     display: flex;
     justify-content: center;
-    list-style: none; /* Removes bullet points */
+    list-style: none;
     padding: 10px;
 }
