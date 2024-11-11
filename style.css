@@ -284,3 +284,54 @@ button:focus, select:focus {
     outline: 2px solid #80c0ff;
     outline-offset: 2px;
 }
+
+/* Larger screens - Tablet styles (768px and above) */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        padding: 15px 30px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p, label, select {
+        font-size: 1.2em;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .event-button {
+        padding: 12px 25px;
+    }
+}
+
+/* Desktop styles (1024px and above) */
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 30px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
