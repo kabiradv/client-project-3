@@ -335,3 +335,11 @@ button:focus, select:focus {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none; /* Removes bullet points */
+    padding: 10px;
+}
